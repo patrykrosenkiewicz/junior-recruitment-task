@@ -1,1 +1,40 @@
-plik startowy aplikacji
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>ToDo List</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+        <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+
+        <!--[if IE]>
+        <link href="stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css"/>
+        <![endif]-->
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="todo-header"><span class="title">ToDo List</span></div>
+            <ul class="todo-list" id="toDoList">
+
+            </ul>
+            <div class="todo-footer">
+                <form action="post" id="add-task">
+                    <button class="add-task" id="addTask"></button><input type="text" id="task-item">
+                </form>
+            </div>
+        </div>
+
+
+        <script src="javascript/Event.js"></script>
+        <script src="javascript/taskModel.js"></script>
+        <script src="javascript/taskView.js"></script>
+        <script src="javascript/taskController.js"></script>
+        <script src="javascript/App.js"></script>
+
+    </body>
+
+</html>

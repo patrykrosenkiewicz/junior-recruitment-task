@@ -1,0 +1,169 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url("https://fonts.googleapis.com/css?family=Lato");
+/* line 5, ../../../../../lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 19, ../../sass/screen.scss */
+#checked {
+  text-decoration: line-through;
+  color: #9eb2c0;
+}
+
+/* line 26, ../../sass/screen.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 32, ../../sass/screen.scss */
+body {
+  background: #e9f0f4;
+  color: #2e3641;
+  font-family: 'Lato', sans-serif;
+}
+/* line 37, ../../sass/screen.scss */
+body .container {
+  margin: 50px auto 0;
+  max-width: 35%;
+  border: antiquewhite solid 1px;
+  background-color: #ffffff;
+}
+@media screen and (max-width: 960px) {
+  /* line 37, ../../sass/screen.scss */
+  body .container {
+    max-width: 95%;
+  }
+}
+/* line 49, ../../sass/screen.scss */
+body .container .todo-header {
+  height: 50px;
+  background-color: #2e3641;
+  color: #b8c1c9;
+}
+/* line 54, ../../sass/screen.scss */
+body .container .todo-header .title {
+  display: block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-45%, -50%);
+}
+/* line 63, ../../sass/screen.scss */
+body .container .task {
+  padding: 10px;
+  border-bottom: antiquewhite solid 1px;
+}
+/* line 67, ../../sass/screen.scss */
+body .container .task input[type='checkbox'] {
+  float: left;
+  margin: 0 5px 0 0;
+  border-right: antiquewhite solid 1px;
+}
+/* line 73, ../../sass/screen.scss */
+body .container .task .task-body {
+  float: left;
+  margin-left: 10px;
+  padding-left: 5px;
+  border-left: antiquewhite solid 1px;
+}
+/* line 80, ../../sass/screen.scss */
+body .container .task:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/* line 85, ../../sass/screen.scss */
+body .container .task .delete-button {
+  display: block;
+  float: right;
+  height: 16px;
+  width: 14px;
+  border: none;
+  background: none;
+  background-image: url("../../assets/trash.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 102, ../../sass/screen.scss */
+body .container .todo-footer {
+  padding: 10px;
+}
+/* line 105, ../../sass/screen.scss */
+body .container .todo-footer .add-task {
+  display: inline-block;
+  padding: 1px;
+  margin-right: 6px;
+  height: 10px;
+  width: 10px;
+  border: none;
+  background: none;
+  background-image: url("../../assets/add.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
